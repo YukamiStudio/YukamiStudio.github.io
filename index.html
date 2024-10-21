@@ -3,122 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YUKAMI GROUP</title>
+  <title>YUKAMI STUDIO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="CSS/Style.css" rel="stylesheet"> 
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">YUKAMI GROUP</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#games">Juegos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#software">Software</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">YUKAMI STUDIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
 
   <!-- Header -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="text-center py-5">
     <div class="container">
-      <h1 class="display-4">YUKAMI GROUP</h1>
-      <p class="lead">Creando experiencias</p>
-
+      <h1 class="display-4">YUKAMI STUDIO</h1>
+      <p class="lead">Desarrollo de software y videojuegos innovadores.</p>
     </div>
   </header>
 
-<!-- About Section -->
-<section id="about" class="py-5">
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nosotros</h2>
+      <div class="text-center mb-4">
+        <p class="lead">
+          Somos Yukami Studio, un equipo mexicano apasionado por el desarrollo de software y videojuegos inmersivos. 
+          Combinamos creatividad, innovación y tecnología de punta en cada proyecto. ¡Únete a nosotros en este emocionante viaje creativo!
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card mb-4 shadow-sm border-light">
+            <div class="card-body text-center">
+              <img src="IMG/LOGOSTUDIO.png" alt="Logo de Yukami Studio" class="img-fluid mb-3" style="max-width: 150px;">
+              <p class="card-text">Desarrolladores de videojuegos innovadores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card mb-4 shadow-sm border-light">
+            <div class="card-body text-center">
+              <img src="IMG/LOGO GROUP.png" alt="Logo de Yukami Group" class="img-fluid mb-3" style="max-width: 150px;">
+              <p class="card-text">Impulsando el desarrollo tecnológico en México.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Recent Video Section -->
+<section id="video" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center">Sobre Nosotros</h2>
-    <p class="text-center">Yukami Studio es un equipo apasionado de desarrolladores de videojuegos y software que se especializa en crear experiencias inmersivas , entretenidas y crear software para apoyo del dia a dia. Combinamos creatividad, innovación y tecnología de punta en cada proyecto, haciendo de cada uno una nueva aventura. Creemos en la magia de los videojuegos y trabajamos incansablemente para hacer realidad esas experiencias. ¡Únete a nosotros en este emocionante viaje creativo!</p>
+    <div class="row justify-content-between align-items-center mb-4">
+      <div class="col-md-6">
+        <h2>Video Reciente</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 text-center mb-4">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+        <h5>Descripción del Video</h5>
+        <p>
+          En este video, te mostramos nuestro último proyecto en acción, donde combinamos creatividad y tecnología para ofrecer una experiencia única. 
+          Únete a nosotros y descubre cómo llevamos el desarrollo de software y videojuegos a un nuevo nivel.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="text-center my-4">
-    <!-- Zona para el logo -->
-    <img src="IMG/LOGOSTUDIO.png" alt="Logo de Yukami Studio" class="img-fluid" style="max-width: 200px; margin-right: 20px;">
-    <img src="IMG/LOGO GROUP.png" alt="Logo de Yukami Group" class="img-fluid" style="max-width: 200px;">
-  </div>
-  
 </section>
 
 
-  <!-- Games Section -->
-  <section id="games" class="py-5 bg-light" >
-    <div class="container">
-      <h2 class="text-center">Nuestros Juegos</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Juego 1">
-            <div class="card-body">
-              <h5 class="card-title">Death Silent: Brawl Arena</h5>
-              <p class="card-text">Un emocionante juego de acción con mecánicas innovadoras y gráficos impactantes.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Juego 2">
-            <div class="card-body">
-              <h5 class="card-title">Death Silent: Z-Fall</h5>
-              <p class="card-text">Una aventura épica llena de personajes memorables y un mundo por descubrir.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Juego 2">
-            <div class="card-body">
-              <h5 class="card-title">Runner Z</h5>
-              <p class="card-text">Una aventura épica llena de personajes memorables y un mundo por descubrir.</p>
-            </div>
-          </div>
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Proyectos</h2>
+    <div class="projects-container">
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto Alpha</h5>
+          <p class="card-text">Descripción breve del Proyecto Alpha.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Software Section -->
-  <section id="software" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Nuestro Software</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Stock Wise</h5>
-              <p class="card-text">Un poderoso y portable gestor de inventarios, en la cual puedes llevar en orden su inventario. <a href="HTML/StockWise/Stock.html">Saber mas</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Sythar Equestion</h5>
-              <p class="card-text">Compilador Para realizar la Compilacion de Ecuaciones para verificar si esta bien y realizar las notaciones,Arboles De Expresion y Tripletas. <a href="">Saber mas</a></p>
-            </div>
-          </div>
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto Beta</h5>
+          <p class="card-text">Descripción breve del Proyecto Beta.</p>
         </div>
       </div>
+      <!-- Duplica más tarjetas de proyectos aquí -->
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto Beta</h5>
+          <p class="card-text">Descripción breve del Proyecto Beta.</p>
+        </div>
+      </div>
+      <!-- Duplica más tarjetas de proyectos aquí -->
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto Beta</h5>
+          <p class="card-text">Descripción breve del Proyecto Beta.</p>
+        </div>
+      </div>
+      <!-- Duplica más tarjetas de proyectos aquí -->
     </div>
-  </section>
+  </div>
+</section>
 
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Yukami Studio. Todos los derechos reservados.</p>
+  <footer class="text-white text-center py-3 bg-dark">
+    <div class="container">
+      <p>&copy; 2024 Yukami Studio. Todos los derechos reservados.</p>
+      <div class="mb-2">
+        <a href="https://www.facebook.com/YukamiStudio" class="text-white me-3" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/YukamiStudio" class="text-white me-3" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/YukamiStudio" class="text-white" target="_blank">Instagram</a>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <p>Email: <a href="mailto:contacto@yukamistudio.com" class="text-white">contacto@yukamistudio.com</a></p>
+      </div>
+    </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
