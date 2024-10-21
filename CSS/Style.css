@@ -1,5 +1,5 @@
 h1 {
-  font-family: Arial Black;
+  font-family: 'Arial Black', sans-serif;
 }
 
 .logo {
@@ -20,16 +20,25 @@ body {
   overflow-x: auto; /* Permite el desplazamiento horizontal */
   padding: 20px 0;
   scroll-behavior: smooth; /* Suaviza el desplazamiento */
+  width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.projects-wrapper {
+  display: flex;
+  width: max-content; /* Permite que el contenedor ajuste su ancho a los elementos hijos */
 }
 
 .project-card {
   min-width: 250px; /* Ajusta el tamaño mínimo de las tarjetas */
+  max-width: 300px; /* Limita el ancho máximo si es necesario */
   margin-right: 20px; /* Espacio entre tarjetas */
-  flex: none;
+  flex: 0 0 auto; /* No permite que el card se reduzca */
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   transition: transform 0.2s;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto de profundidad */
+  overflow: hidden; /* Evita que el contenido se desborde */
 }
 
 .project-card:hover {
@@ -38,6 +47,8 @@ body {
 
 .project-card img {
   border-radius: 10px 10px 0 0;
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del card */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 header {
@@ -48,6 +59,13 @@ header {
 footer {
   background-color: #343a40;
 }
+
 a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    min-width: 200px; /* Ajusta para pantallas más pequeñas */
+  }
 }
