@@ -1,40 +1,50 @@
-h1{
-    font-family: Arial Black;
+h1 {
+  font-family: Arial Black;
 }
+
 .logo {
-    max-width: 200px;
-    margin-right: 20px; /* Ajusta la separación aquí */
-  }
-  
-  .logo:last-child {
-    margin-right: 0; /* Elimina el margen del último logo */
-  }
-  body {
-    background-color: #f8f9fa;
-  }
-  .projects-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px 0;
-  }
-  .project-card {
-    min-width: 200px;
-    margin-right: 20px;
-    flex: none;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    transition: transform 0.2s;
-  }
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  .project-card img {
-    border-radius: 10px 10px 0 0;
-  }
-  header {
-    background: linear-gradient(90deg, #007bff, #6610f2);
-    color: white;
-  }
-  footer {
-    background-color: #343a40;
-  }
+  max-width: 200px;
+  margin-right: 20px; /* Ajusta la separación aquí */
+}
+
+.logo:last-child {
+  margin-right: 0; /* Elimina el margen del último logo */
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.projects-container {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  padding: 20px 0;
+  scroll-behavior: smooth; /* Suaviza el desplazamiento */
+}
+
+.project-card {
+  min-width: 250px; /* Ajusta el tamaño mínimo de las tarjetas */
+  margin-right: 20px; /* Espacio entre tarjetas */
+  flex: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto de profundidad */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+header {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  color: white;
+}
+
+footer {
+  background-color: #343a40;
+}
