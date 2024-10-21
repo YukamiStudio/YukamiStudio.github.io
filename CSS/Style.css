@@ -1,3 +1,11 @@
 h1{
     font-family: Arial Black;
 }
+.logo {
+    max-width: 200px;
+    margin-right: 20px; /* Ajusta la separación aquí */
+  }
+  
+  .logo:last-child {
+    margin-right: 0; /* Elimina el margen del último logo */
+  }
