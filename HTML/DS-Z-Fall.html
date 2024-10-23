@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUKAMI STUDIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUKAMI STUDIO - Nombre del Juego</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS/Style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(to right, #6a82fb, #fc5c7d);
+      color: white;
+    }
+    .section-title {
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #343a40;
+    }
+    .btn-download {
+      background-color: #6a82fb;
+      color: white;
+      font-size: 1.25rem;
+    }
+    .btn-download:hover {
+      background-color: #5a73e1;
+    }
+    .list-group-item {
+      background: #ffffff;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 30px;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .image-container img {
+      width: 250px; /* Ajusta el ancho de las imágenes aquí */
+      height: auto; /* Mantiene la proporción */
+      margin: 10px; /* Margen de separación entre imágenes */
+    }
+  </style>
 </head>
 <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">YUKAMI STUDIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Nombre del Juego</h1>
+    <p class="lead">Una breve descripción del juego que capte la atención del usuario.</p>
+    <a href="https://github.com/tu_usuario/tu_repositorio/releases/latest/download/tu_juego.zip" class="btn btn-download btn-lg">Descargar Ahora</a>
+  </div>
+</header>
+
+<!-- Game Details Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Descripción</h2>
+    <p class="text-center">Aquí va una descripción más detallada del juego, explicando su concepto, mecánicas y objetivos.</p>
     
+    <h2 class="section-title text-center">Imágenes</h2>
+    <div class="image-container mb-4">
+      <img src="https://via.placeholder.com/300" alt="Imagen del juego 1">
+      <img src="https://via.placeholder.com/300" alt="Imagen del juego 2">
+      <img src="https://via.placeholder.com/300" alt="Imagen del juego 3">
+      <img src="https://via.placeholder.com/300" alt="Imagen del juego 4">
+    </div>
+
+    <!-- Disponible en -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-title">Disponible en</h2>
+        <a href="https://itch.io" class="btn btn-primary mx-2">Itch.io</a>
+        <!--
+        <a href="https://gamejolt.com" class="btn btn-primary mx-2">GameJolt</a>
+        -->
+      </div>
+    </section>
+
+
+    <h2 class="section-title text-center">Lista de Cambios</h2>
+    
+    <div class="card mb-4">
+      <div class="card-header">
+        <strong>Agregados</strong>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Nuevos niveles añadidos.</li>
+          <li class="list-group-item">Mejoras gráficas en personajes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <strong>Cambios / Soluciones de Errores</strong>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Corrección de errores menores en la jugabilidad.</li>
+          <li class="list-group-item">Balanceo de la dificultad de los enemigos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center py-4 bg-dark">
+  <div class="container">
+    <p class="mb-3">&copy; 2024 Yukami Studio. Todos los derechos reservados.</p>
+    <div class="footer-links mb-4">
+      <a href="https://www.tiktok.com/@yukami.studio" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://x.com/StudioYuka78506" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <!--
+      <a href="https://discord.gg/BEZh9y5F" target="_blank">
+        <i class="fab fa-discord"></i>
+      </a>
+      -->
+      <a href="https://www.youtube.com/@YUKAMISTUDIO" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <div>
+      <h5 class="mb-2">Contacto</h5>
+      <a href="mailto:YukamiContacto@gmail.com" class="text-white">yukamisuport@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
