@@ -9,18 +9,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      background-color: #f8f9fa; /* Color de fondo */
+      background-color: #f8f9fa;
     }
     header {
-      background: linear-gradient(to right, #6a82fb, #fc5c7d); /* Color del header */
+      background: linear-gradient(to right, #6a82fb, #fc5c7d);
       color: white;
     }
     section {
-      background-color: #e9ecef; /* Color de fondo de las secciones */
+      background-color: #e9ecef;
+      padding: 4rem 0;
     }
     footer {
-      background-color: #343a40; /* Color del footer */
+      background-color: #343a40;
       color: white;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      border-radius: 10px;
+    }
+    .btn-primary {
+      background-color: #6a82fb;
+      border-color: #6a82fb;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #fc5c7d;
+      border-color: #fc5c7d;
     }
   </style>
 </head>
@@ -29,12 +47,13 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">YUKAMI STUDIO</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand ms-2" href="index.html">YUKAMI STUDIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </nav>
+
 
 <!-- Header -->
 <header class="text-center py-5">
@@ -44,101 +63,91 @@
   </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="py-5">
+<!-- Sobre Nosotros -->
+<section id="about-us" class="py-5" style="background-color: #ffffff;">
   <div class="container">
-    <h2 class="text-center mb-4">Sobre Nosotros</h2>
-    <div class="text-center mb-4">
-      <p class="lead">
-        ¡Bienvenido a Yukami Studio! Somos un equipo mexicano apasionado por crear videojuegos inmersivos y software innovador. 
-        Nuestra misión es ofrecerte experiencias únicas que desafíen tu creatividad y te mantengan entretenido. 
-        ¡No te pierdas la oportunidad de jugar nuestros juegos y descubrir el potencial de nuestro software! 
-        ¡Únete a nosotros en esta emocionante aventura!
-      </p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-5">
-        <div class="card mb-4 shadow-sm border-light">
-          <div class="card-body text-center">
-            <img src="IMG/LOGOSTUDIO.png" alt="Logo de Yukami Studio" class="img-fluid mb-3" style="max-width: 150px;">
-            <p class="card-text">Desarrollador y distribuidor de Videojuegos, Software y mas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="lead text-center mx-auto" style="font-family: 'Arial', sans-serif; font-size: 1.5rem; color: #333; line-height: 1.6; max-width: 1300px;">
+      ¡Bienvenido a <strong>Yukami Studio!</strong> Somos un equipo mexicano apasionado por crear videojuegos inmersivos y software innovador. Nuestra misión es ofrecerte experiencias únicas que desafíen tu creatividad y te mantengan entretenido viviendo grandes historias. ¡No te pierdas la oportunidad de jugar nuestros juegos y descubrir el potencial de nuestro software!
+    </p>
   </div>
 </section>
 
-<!-- Recent Video Section -->
+<!-- Video de Prueba -->
 <section id="video" class="py-5">
   <div class="container">
-    <div class="row justify-content-between align-items-center mb-4">
-      <div class="col-md-6">
-        <h2>Video Reciente</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2>Video de Prueba</h2>
+        <p>Observa nuestro video de prueba, Que se utilizara para ver el estado de la pagina , en la zona donde se van a mostrar nuestros videos.</p>
       </div>
-    </div>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 text-center mb-4">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-6">
-        <h5>Descripción del Video</h5>
-        <p>
-          En este video, te mostramos nuestro último proyecto en acción, donde combinamos creatividad y tecnología para ofrecer una experiencia única. 
-          Únete a nosotros y descubre cómo llevamos el desarrollo de software y videojuegos a un nuevo nivel.
-        </p>
+      <div class="col-lg-6 text-center">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/QgMw6wuKVHg" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-5">
+
+<!-- Proyectos -->
+<!-- Proyectos -->
+<section id="projects">
   <div class="container">
-    <h2 class="text-center mb-4">Proyectos</h2>
-    <div class="projects-container">
-      <div class="projects-wrapper">
-        <div class="project-card card">
-          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Proyecto 2">
-          <div class="card-body">
-            <h5 class="card-title">Death Silent: Z-Fall</h5>
-            <p class="card-text">Podrás durar el mayor tiempo recolectando<br>objetos que caen del cielo.</p>
-            <a href="HTML/DS-Z-Fall.html" class="btn btn-primary">Saber más</a>
-          </div>
+    <h2 class="text-center mb-5">Proyectos</h2>
+    <div class="d-flex flex-nowrap overflow-auto">
+      <!-- Proyecto 1 -->
+      <div class="card me-3" style="min-width: 300px;">
+        <img src="IMG/Inco.png" class="card-img-top" alt="Proyecto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Symbolex</h5>
+          <p class="card-text">Symbolex permite analizar y convertir expresiones matemáticas en árboles de expresión y código intermedio, facilitando su procesamiento y evaluación eficiente.</p>
+<!-- <a href="HTML/DS-Z-Fall.html" class="btn btn-primary">Saber más</a> -->
         </div>
-        <!-- Puedes agregar más project-card aquí -->
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="card me-3" style="min-width: 300px;">
+        <img src="IMG/Inco.png" class="card-img-top" alt="Proyecto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Death Silent</h5>
+          <p class="card-text">Podras Sobrevivir a Oleadas de Zombies y Descubrir lo que paso en Light City, enbarcate en esta Historia para resolver el Misterio.</p>
+<!-- <a href="HTML/DS-Z-Fall.html" class="btn btn-primary">Saber más</a> -->
+        </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="card me-3" style="min-width: 300px;">
+        <img src="IMG/Inco.png" class="card-img-top" alt="Proyecto">
+        <div class="card-body text-center">
+          <h5 class="card-title">AloyIA</h5>
+          <p class="card-text">Aloy es un sistema experto diseñado para brindar apoyo emocional personalizado, aprendiendo de las interacciones con el usuario y ofreciendo recomendaciones adaptativas para mejorar su bienestar emocional.</p>
+<!-- <a href="HTML/DS-Z-Fall.html" class="btn btn-primary">Saber más</a> -->
+        </div>
+      </div>
+      <!-- Proyecto 4 -->
+      <div class="card me-3" style="min-width: 300px;">
+        <img src="IMG/Inco.png" class="card-img-top" alt="Proyecto">
+        <div class="card-body text-center">
+          <h5 class="card-title">Stock Wise</h5>
+          <p class="card-text">Gestiona tus productos de manera eficiente con Stock Wise, un sistema experto portable que facilita el control de inventarios mediante comandos rápidos.</p>
+          <!-- <a href="HTML/DS-Z-Fall.html" class="btn btn-primary">Saber más</a> -->
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Footer -->
-<footer class="text-white text-center py-4">
+<footer class="text-center py-4">
   <div class="container">
-    <p class="mb-3">&copy; 2024 Yukami Studio. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Yukami Studio. Todos los derechos reservados.</p>
     <div class="mb-4">
-      <a href="https://www.tiktok.com/@yukami.studio" target="_blank" class="text-white me-3" style="text-decoration: none;">
-        <i class="fab fa-tiktok" style="font-size: 30px;"></i>
-      </a>
-      <a href="https://x.com/StudioYuka78506" target="_blank" class="text-white me-3" style="text-decoration: none;">
-        <i class="fab fa-twitter-square" style="font-size: 30px;"></i>
-      </a>
-      <!--
-      <a href="https://discord.gg/BEZh9y5F" target="_blank" class="text-white me-3" style="text-decoration: none;">
-        <i class="fab fa-discord" style="font-size: 30px;"></i>
-      </a>
-      -->
-      <a href="https://www.youtube.com/@YUKAMISTUDIO" target="_blank" class="text-white" style="text-decoration: none;">
-        <i class="fab fa-youtube" style="font-size: 30px;"></i>
-      </a>
+      <a href="https://www.tiktok.com/@yukami.studio" target="_blank" class="text-white me-3"><i class="fab fa-tiktok fa-2x"></i></a>
+      <a href="https://x.com/StudioYuka78506" target="_blank" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/@YUKAMISTUDIO" target="_blank" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
     </div>
-    <div>
-      <h5 class="mb-2">Contacto</h5>
-      <a href="mailto:YukamiContacto@gmail.com" class="text-white">yukamisuport@gmail.com</a>
-    </div>
+    <h5>Contacto</h5>
+    <a href="mailto:yukamisuport@gmail.com" class="text-white">yukamisuport@gmail.com</a>
   </div>
 </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
